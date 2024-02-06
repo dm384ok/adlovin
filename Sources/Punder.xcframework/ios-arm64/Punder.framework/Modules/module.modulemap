@@ -1,0 +1,11 @@
+framework module Punder {
+  umbrella header "Punder.h"
+  export *
+
+  module * { export * }
+}
+
+module Punder.Swift {
+  header "Punder-Swift.h"
+  requires objc
+}
