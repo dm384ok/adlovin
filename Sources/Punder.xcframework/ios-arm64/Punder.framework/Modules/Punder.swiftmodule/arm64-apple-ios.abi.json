@@ -432,28 +432,28 @@
     {
       "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
       "kind": "Dictionary",
-      "offset": 816,
+      "offset": 815,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
       "kind": "StringLiteral",
-      "offset": 1995,
+      "offset": 1994,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
       "kind": "BooleanLiteral",
-      "offset": 7012,
+      "offset": 7011,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
       "kind": "StringLiteral",
-      "offset": 15854,
+      "offset": 15913,
       "length": 27,
       "value": "\"Punder.AppsFlyerLibDelegateWrapper\""
     }
