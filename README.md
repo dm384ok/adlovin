@@ -11,9 +11,10 @@ After dependency is continue processing, go to INFO tab, and setup some necessar
 #### "PlatformKey" is Configuration key, It's very important step
 SDK init by configuration key, so you need ask your manager about it, and add  ***PlatformKey*** to your info plist.
 
-> NSAdvertisingAttributionReportEndpoint : https://appsflyer-skadnetwork.com/
 
 > ITSAppUsesNonExemptEncryption  :  NO
+
+> NSAdvertisingAttributionReportEndpoint : https://appsflyer-skadnetwork.com/
 
 > NSUserTrackingUsageDescription : Select "Allow" for better experience. This identifier will be used to  order to functionalities and user engagement.
 
@@ -23,9 +24,9 @@ SDK init by configuration key, so you need ask your manager about it, and add  *
 
 > NSPhotoLibraryUsageDescription : The game use images to setup user profile and problem solving, we do not store your personal avatart.
 
-> **PlatformKey** : ***Paste here key value***
+> PlatformKey : ***Paste here key value***
 
-![enter image description here](https://i.imgur.com/TMXPzy9.png)
+![Imgur](https://i.imgur.com/Cp7V6n1.png)
 
 #### Next step is enable **Push Notification** on Capability editor:
 
