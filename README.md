@@ -7,10 +7,7 @@ Add SDK swift package dependencies to project: [https://github.com/dm384ok/Deliv
 
 ## Info.plist setup
 After dependency is continue processing, go to INFO tab, and setup some necessary fields:
-
-#### "PlatformKey" is Configuration key, It's very important step
-SDK init by configuration key, so you need ask your manager about it, and add  ***PlatformKey*** to your info plist.
-
+(**PlatformKey** is configuration key, it very important step, so you need ask your manager about it, and add ***PlatformKey*** to your info plist.)
 
 > ITSAppUsesNonExemptEncryption  :  NO
 
