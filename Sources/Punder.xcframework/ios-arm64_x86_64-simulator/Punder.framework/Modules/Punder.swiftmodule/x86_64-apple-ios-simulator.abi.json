@@ -430,28 +430,28 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
+      "filePath": "\/Users\/builder\/clone\/Amplitude.swift",
       "kind": "Dictionary",
       "offset": 815,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
+      "filePath": "\/Users\/builder\/clone\/Amplitude.swift",
       "kind": "StringLiteral",
       "offset": 1994,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
+      "filePath": "\/Users\/builder\/clone\/Amplitude.swift",
       "kind": "BooleanLiteral",
       "offset": 7011,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sasha\/Desktop\/7.0 \/Anpush\/Amplitude.swift",
+      "filePath": "\/Users\/builder\/clone\/Amplitude.swift",
       "kind": "StringLiteral",
       "offset": 15913,
       "length": 27,
