@@ -6,6 +6,6 @@
 
 import Foundation
 
-private class HelloKitty {
+public class HelloKitty {
     
 }
