@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/ADLovin.framework/ADLovin</key>
 		<data>
-		RFMmZ++FBPRhxPYdvPqIIFyuMY4=
+		6EbmrKH5/gzbl9PfElPbeeNck8o=
 		</data>
 		<key>ios-arm64/ADLovin.framework/Headers/ADLovin-Swift.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>ios-arm64/ADLovin.framework/Info.plist</key>
 		<data>
-		zKgYWG/2lzunyXBQwPDgRz65AUE=
+		QHjzRZVFbBMXLiq0SsFx7PpTW0M=
 		</data>
 		<key>ios-arm64/ADLovin.framework/Modules/ADLovin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/ADLovin</key>
 		<data>
-		XYbdXa8E5yLb3GlYIXol5nV+jII=
+		5QOFxCK/k94zz2eAUub/skPVUiI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/Headers/ADLovin-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/Info.plist</key>
 		<data>
-		RDWCF8GIn1tieTcL99JbxqWMoos=
+		Y/hsvwVG0zQpKGAicZkvN8c/QwM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -92,9 +92,25 @@
 		<data>
 		FUHORNSS1hV1zx2QMsRXMdZ7Ih4=
 		</data>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		qyoRm0gJWM2frRRW2z/Ne8RSISE=
+		</data>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		uAZSdMIXfk/2lLFyjBtneAN43+4=
+		</data>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeResources</key>
 		<data>
-		RtQoncyNRuEYjOmVqkIvAgNT0F4=
+		iUi6aJn6eWocglXBmMFT6bfa4Lw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RFMmZ++FBPRhxPYdvPqIIFyuMY4=
+			6EbmrKH5/gzbl9PfElPbeeNck8o=
 			</data>
 			<key>hash2</key>
 			<data>
-			PHBUyz59OTfJXL/ysGr9uMBQEvRvP6Z4dONeARnORdQ=
+			Rua7Ah37TcayzagLXNgfvmc2IpDwFjBUdHOgf5p0UIc=
 			</data>
 		</dict>
 		<key>ios-arm64/ADLovin.framework/Headers/ADLovin-Swift.h</key>
@@ -125,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zKgYWG/2lzunyXBQwPDgRz65AUE=
+			QHjzRZVFbBMXLiq0SsFx7PpTW0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			6WyYf+dz8xqGj1vU5RyxDZv3zaE/HCR6tjV2IY+E+gE=
+			TjieJ1zPzgWLSujAYm1FOhXG4V3slOQyN80xuIDXSvY=
 			</data>
 		</dict>
 		<key>ios-arm64/ADLovin.framework/Modules/ADLovin.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -202,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XYbdXa8E5yLb3GlYIXol5nV+jII=
+			5QOFxCK/k94zz2eAUub/skPVUiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0MCJtx3EQE78kyHMpKmdGyhJdwWtgzoOdP0cb1N1qD0=
+			W7QiPMDgTixiyDu6xRblY3obv/MbyVHM9qo5Xn37seE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/Headers/ADLovin-Swift.h</key>
@@ -224,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RDWCF8GIn1tieTcL99JbxqWMoos=
+			Y/hsvwVG0zQpKGAicZkvN8c/QwM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pH7hZLWNzUjv4nrJyL6FN+wsEp05xyib4U+6t1uqAQY=
+			+KHoGcaB8thm1RqlmN0m18UpI6XHpITG/jzyPl1Udtc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -341,15 +357,59 @@
 			Px+HUtErhcSBnV+KZx9DtXcwqd9liwRZ+QTLGsCKIos=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qyoRm0gJWM2frRRW2z/Ne8RSISE=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ug2jE3uz5JCCzDnDysg7yaqWUFBkc351JF9fJKOZ9UI=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uAZSdMIXfk/2lLFyjBtneAN43+4=
+			</data>
+			<key>hash2</key>
+			<data>
+			goG3hLkVUhY6d8IJUA93Kp6zCDjd9fEeu3VNylR3q9o=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RtQoncyNRuEYjOmVqkIvAgNT0F4=
+			iUi6aJn6eWocglXBmMFT6bfa4Lw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aygryqqWM8DxgV2C3MUuivvyHy1pB+Z+BxePMUDQgF8=
+			MsLgbilNtwwRFTrQPjvfC0SGcCcaAGBfQeO6hLCJJMg=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/ADLovin.framework/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>

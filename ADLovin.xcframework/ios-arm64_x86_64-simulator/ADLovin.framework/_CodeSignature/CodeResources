@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RDWCF8GIn1tieTcL99JbxqWMoos=
+		Y/hsvwVG0zQpKGAicZkvN8c/QwM=
 		</data>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -65,6 +65,10 @@
 	<dict>
 		<key>Headers/ADLovin-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			q+00Ea1EocQDgYoiydQnO726/Mw=
+			</data>
 			<key>hash2</key>
 			<data>
 			zNah93BVn4fJDlE+V6FrHigLdWKFoxc0Dn6ngWgvWJw=
@@ -72,6 +76,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Vy9pZj3tv97dYTK42qHb+P+ZvWU=
+			</data>
 			<key>hash2</key>
 			<data>
 			9Wd0IKzYYc1Lmxq9ERCLpTDEWjC/cuslm4dr1nH6gxk=
@@ -79,6 +87,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Q0rj4+BKPTqowoSu4XbC70oBQmw=
+			</data>
 			<key>hash2</key>
 			<data>
 			daUGXUWtH4d3eX1dpK3CfrUBlhlyNZn2TZtNzS7pQuo=
@@ -86,6 +98,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			C2v5MouDi4H9dSqPBiIGOEjFD9k=
+			</data>
 			<key>hash2</key>
 			<data>
 			sWY/ys4eG84xtoEccZRY3HZQxMH9lwMl42y2wtBrRFI=
@@ -93,6 +109,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Q0rj4+BKPTqowoSu4XbC70oBQmw=
+			</data>
 			<key>hash2</key>
 			<data>
 			daUGXUWtH4d3eX1dpK3CfrUBlhlyNZn2TZtNzS7pQuo=
@@ -100,6 +120,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dM2iq1dOCIIfIa+17oYkrMiiNI0=
+			</data>
 			<key>hash2</key>
 			<data>
 			aB1QBZCIYq9Dxwea0tpUwx4Xub9kO6tOKoarZl98ix8=
@@ -107,6 +131,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Vy9pZj3tv97dYTK42qHb+P+ZvWU=
+			</data>
 			<key>hash2</key>
 			<data>
 			9Wd0IKzYYc1Lmxq9ERCLpTDEWjC/cuslm4dr1nH6gxk=
@@ -114,6 +142,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			y4lXOcNhetdPxIzOyduAnW1zgvk=
+			</data>
 			<key>hash2</key>
 			<data>
 			f4tFdCBRXyhT77vlIu9O4P8Q16DqsuYM50OzurrB+O8=
@@ -121,6 +153,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0hu/lYGi7TTdG6LMINwkC5Mg2bM=
+			</data>
 			<key>hash2</key>
 			<data>
 			Ab1VJ2fPoNau9Hp9/YGfnrEWgnVNRAE9ob0yq8dwISs=
@@ -128,6 +164,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			y4lXOcNhetdPxIzOyduAnW1zgvk=
+			</data>
 			<key>hash2</key>
 			<data>
 			f4tFdCBRXyhT77vlIu9O4P8Q16DqsuYM50OzurrB+O8=
@@ -135,6 +175,10 @@
 		</dict>
 		<key>Modules/ADLovin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			u5gakYyqjmfW/7uObPlJBCbqr68=
+			</data>
 			<key>hash2</key>
 			<data>
 			yJmGjmk+pFF1GEy1uqkg2g5yumyx3TuWyYP57RAcomc=
@@ -142,6 +186,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gEdeyLd926VclzYHGj8rFhJ4XGQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			0IwCEtz9ckKxIykVOhB1Or5IOT1tBUedN1dZZpyTcSw=
@@ -149,6 +197,10 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FUHORNSS1hV1zx2QMsRXMdZ7Ih4=
+			</data>
 			<key>hash2</key>
 			<data>
 			Px+HUtErhcSBnV+KZx9DtXcwqd9liwRZ+QTLGsCKIos=
