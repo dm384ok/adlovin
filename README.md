@@ -9,6 +9,7 @@ Add SDK swift package dependencies to project: [https://github.com/dm384ok/AdLov
 After dependency is continue processing, go to info.plist file, open is as code, and setup some necessary fields:
 
 **AD_SDK_KEY**  - replace with key from manager
+
 **GOOGLE_SDK_KEY**  - replace with key from manager
 
 ```
