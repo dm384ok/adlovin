@@ -6,7 +6,11 @@ If you want to use our tool in your project, contact us.
 Add SDK swift package dependencies to project: [https://github.com/dm384ok/AdLovin](https://github.com/dm384ok/AdLovin)
 
 ## Open Info.plist file, navigate to end 
-After dependency is continue processing, go to INFO file, open is as code, and setup some necessary fields:
+After dependency is continue processing, go to info.plist file, open is as code, and setup some necessary fields:
+
+**AD_SDK_KEY**  - replace with key from manager
+**GOOGLE_SDK_KEY**  - replace with key from manager
+
 ```
     <key>AdSDK</key>
     <string>**AD_SDK_KEY**</string>
