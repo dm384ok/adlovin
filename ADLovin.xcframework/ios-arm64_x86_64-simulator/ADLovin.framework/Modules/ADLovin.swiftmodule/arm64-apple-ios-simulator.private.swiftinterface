@@ -1,0 +1,352 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ADLovin
+import AVFoundation
+import AdSupport
+import AppLovinSDK
+import AppTrackingTransparency
+import CFNetwork
+import CoreAudioTypes
+import CoreFoundation
+import CoreMedia
+import CoreTelephony
+import Foundation
+import GoogleMobileAds
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import UnityAds
+import _AVKit_SwiftUI
+import _Concurrency
+import _StoreKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension ADLovin.Disk {
+  public enum ErrorCode : Swift.Int {
+    case noFileFound
+    case serialization
+    case deserialization
+    case invalidFileName
+    case couldNotAccessTemporaryDirectory
+    case couldNotAccessUserDomainMask
+    case couldNotAccessSharedContainer
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static let errorDomain: Swift.String
+}
+extension ADLovin.Disk {
+  public static func save<T>(_ value: T, to directory: ADLovin.Disk.Directory, as path: Swift.String, encoder: Foundation.JSONEncoder = JSONEncoder()) throws where T : Swift.Encodable
+  public static func append<T>(_ value: T, to path: Swift.String, in directory: ADLovin.Disk.Directory, decoder: Foundation.JSONDecoder = JSONDecoder(), encoder: Foundation.JSONEncoder = JSONEncoder()) throws where T : Swift.Decodable, T : Swift.Encodable
+  public static func append<T>(_ value: [T], to path: Swift.String, in directory: ADLovin.Disk.Directory, decoder: Foundation.JSONDecoder = JSONDecoder(), encoder: Foundation.JSONEncoder = JSONEncoder()) throws where T : Swift.Decodable, T : Swift.Encodable
+  public static func retrieve<T>(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: T.Type, decoder: Foundation.JSONDecoder = JSONDecoder()) throws -> T where T : Swift.Decodable
+}
+@_hasMissingDesignatedInitializers public class Disk {
+  public enum Directory : Swift.Equatable {
+    case documents
+    case caches
+    case applicationSupport
+    case temporary
+    case sharedContainer(appGroupName: Swift.String)
+    public var pathDescription: Swift.String {
+      get
+    }
+    public static func == (lhs: ADLovin.Disk.Directory, rhs: ADLovin.Disk.Directory) -> Swift.Bool
+  }
+  @objc deinit
+}
+extension ADLovin.Disk {
+  public static func save(_ value: [UIKit.UIImage], to directory: ADLovin.Disk.Directory, as path: Swift.String) throws
+  public static func append(_ value: UIKit.UIImage, to path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func append(_ value: [UIKit.UIImage], to path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func retrieve(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: [UIKit.UIImage].Type) throws -> [UIKit.UIImage]
+}
+@_inheritsConvenienceInitializers @objc(ADLovin) final public class ADLovin : ObjectiveC.NSObject {
+  @objc final public var customKeys: [Swift.String : Swift.String]
+  @objc public static func enable()
+  final public func vkluchit()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(*, deprecated, renamed: "TypedValue")
+public enum UnknownTypeValue : Swift.Decodable, Swift.Sendable {
+  case int(Swift.Int), string(Swift.String), float(Swift.Float), null
+  public init(from decoder: any Swift.Decoder) throws
+  public enum UnknownTypeError : Swift.Error {
+    case missingValue
+    public static func == (a: ADLovin.UnknownTypeValue.UnknownTypeError, b: ADLovin.UnknownTypeValue.UnknownTypeError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var stringValue: Swift.String? {
+    get
+  }
+  public var floatValue: Swift.Float? {
+    get
+  }
+}
+extension ADLovin.Disk {
+  public static func save(_ value: Foundation.Data, to directory: ADLovin.Disk.Directory, as path: Swift.String) throws
+  public static func retrieve(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: Foundation.Data.Type) throws -> Foundation.Data
+}
+@_hasMissingDesignatedInitializers public class Flagsmith {
+  public static let shared: ADLovin.Flagsmith
+  public var baseURL: Foundation.URL {
+    get
+    set
+  }
+  public var apiKey: Swift.String? {
+    get
+    set
+  }
+  public var enableAnalytics: Swift.Bool {
+    get
+    set
+  }
+  public var analyticsFlushPeriod: Swift.Int {
+    get
+    set
+  }
+  public var defaultFlags: [ADLovin.Flag]
+  public var cacheConfig: ADLovin.CacheConfig
+  public func getFeatureFlags(forIdentity identity: Swift.String? = nil, completion: @escaping (Swift.Result<[ADLovin.Flag], any Swift.Error>) -> Swift.Void)
+  public func hasFeatureFlag(withID id: Swift.String, forIdentity identity: Swift.String? = nil, completion: @escaping (Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
+  @available(*, deprecated, renamed: "getValueForFeature(withID:forIdentity:completion:)")
+  public func getFeatureValue(withID id: Swift.String, forIdentity identity: Swift.String? = nil, completion: @escaping (Swift.Result<Swift.String?, any Swift.Error>) -> Swift.Void)
+  public func getValueForFeature(withID id: Swift.String, forIdentity identity: Swift.String? = nil, completion: @escaping (Swift.Result<ADLovin.TypedValue?, any Swift.Error>) -> Swift.Void)
+  public func getTraits(withIDS ids: [Swift.String]? = nil, forIdentity identity: Swift.String, completion: @escaping (Swift.Result<[ADLovin.Trait], any Swift.Error>) -> Swift.Void)
+  public func getTrait(withID id: Swift.String, forIdentity identity: Swift.String, completion: @escaping (Swift.Result<ADLovin.Trait?, any Swift.Error>) -> Swift.Void)
+  public func setTrait(_ trait: ADLovin.Trait, forIdentity identity: Swift.String, completion: @escaping (Swift.Result<ADLovin.Trait, any Swift.Error>) -> Swift.Void)
+  public func setTraits(_ traits: [ADLovin.Trait], forIdentity identity: Swift.String, completion: @escaping (Swift.Result<[ADLovin.Trait], any Swift.Error>) -> Swift.Void)
+  public func getIdentity(_ identity: Swift.String, completion: @escaping (Swift.Result<ADLovin.Identity, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CacheConfig {
+  public var cache: Foundation.URLCache
+  public var useCache: Swift.Bool
+  public var cacheTTL: Swift.Double
+  public var skipAPI: Swift.Bool
+  @objc deinit
+}
+public struct Traits : Swift.Codable, Swift.Sendable {
+  public let traits: [ADLovin.Trait]
+  public let identifier: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Identity : Swift.Decodable, Swift.Sendable {
+  public let flags: [ADLovin.Flag]
+  public let traits: [ADLovin.Trait]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Flag : Swift.Codable, Swift.Sendable {
+  public let feature: ADLovin.Feature
+  public let value: ADLovin.TypedValue
+  public let enabled: Swift.Bool
+  public init(featureName: Swift.String, boolValue: Swift.Bool, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public init(featureName: Swift.String, floatValue: Swift.Float, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public init(featureName: Swift.String, intValue: Swift.Int, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public init(featureName: Swift.String, stringValue: Swift.String, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public init(featureName: Swift.String, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public init(featureName: Swift.String, value: ADLovin.TypedValue, enabled: Swift.Bool, featureType: Swift.String? = nil, featureDescription: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum TypedValue : Swift.Equatable, Swift.Sendable {
+  case bool(Swift.Bool)
+  case float(Swift.Float)
+  case int(Swift.Int)
+  case string(Swift.String)
+  case null
+  public static func == (a: ADLovin.TypedValue, b: ADLovin.TypedValue) -> Swift.Bool
+}
+extension ADLovin.TypedValue : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension ADLovin.TypedValue : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension ADLovin.TypedValue {
+  @available(*, deprecated, message: "Switch on `TypedValue` to retrieve the associated data type.")
+  public var intValue: Swift.Int? {
+    get
+  }
+  @available(*, deprecated, message: "Switch on `TypedValue` to retrieve the associated data type.")
+  public var floatValue: Swift.Float? {
+    get
+  }
+  @available(*, deprecated, message: "Switch on `TypedValue` to retrieve the associated data type.")
+  public var stringValue: Swift.String? {
+    get
+  }
+}
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *)
+extension ADLovin.Flagsmith {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getFeatureFlags(forIdentity identity: Swift.String? = nil) async throws -> [ADLovin.Flag]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func hasFeatureFlag(withID id: Swift.String, forIdentity identity: Swift.String? = nil) async throws -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, renamed: "getValueForFeature(withID:forIdentity:)")
+  public func getFeatureValue(withID id: Swift.String, forIdentity identity: Swift.String? = nil) async throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getValueForFeature(withID id: Swift.String, forIdentity identity: Swift.String? = nil) async throws -> ADLovin.TypedValue?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getTraits(withIDS ids: [Swift.String]? = nil, forIdentity identity: Swift.String) async throws -> [ADLovin.Trait]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getTrait(withID id: Swift.String, forIdentity identity: Swift.String) async throws -> ADLovin.Trait?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public func setTrait(_ trait: ADLovin.Trait, forIdentity identity: Swift.String) async throws -> ADLovin.Trait
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public func setTraits(_ traits: [ADLovin.Trait], forIdentity identity: Swift.String) async throws -> [ADLovin.Trait]
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getIdentity(_ identity: Swift.String) async throws -> ADLovin.Identity
+  #endif
+}
+public struct Trait : Swift.Codable, Swift.Sendable {
+  public let key: Swift.String
+  public var typedValue: ADLovin.TypedValue
+  public init(key: Swift.String, value: ADLovin.TypedValue)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension ADLovin.Trait {
+  public init(key: Swift.String, value: Swift.Bool)
+  public init(key: Swift.String, value: Swift.Float)
+  public init(key: Swift.String, value: Swift.Int)
+  public init(key: Swift.String, value: Swift.String)
+}
+extension ADLovin.Trait {
+  @available(*, deprecated, renamed: "typedValue")
+  public var value: Swift.String {
+    get
+    set
+  }
+}
+@available(*, deprecated)
+public struct PostTrait : Swift.Codable {
+  public let key: Swift.String
+  public var value: Swift.String
+  public var identity: ADLovin.PostTrait.IdentityStruct
+  public struct IdentityStruct : Swift.Codable {
+    public var identifier: Swift.String
+    public enum CodingKeys : Swift.String, Swift.CodingKey {
+      case identifier
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias RawValue = Swift.String
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public init(identifier: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(key: Swift.String, value: Swift.String, identifier: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Feature : Swift.Codable, Swift.Sendable {
+  public let name: Swift.String
+  public let type: Swift.String?
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension ADLovin.Disk {
+  @available(*, deprecated, message: "Use Disk.url(for:in:) instead, it does not throw an error if the file does not exist.")
+  public static func getURL(for path: Swift.String?, in directory: ADLovin.Disk.Directory) throws -> Foundation.URL
+  public static func url(for path: Swift.String?, in directory: ADLovin.Disk.Directory) throws -> Foundation.URL
+  public static func clear(_ directory: ADLovin.Disk.Directory) throws
+  public static func remove(_ path: Swift.String, from directory: ADLovin.Disk.Directory) throws
+  public static func remove(_ url: Foundation.URL) throws
+  public static func exists(_ path: Swift.String, in directory: ADLovin.Disk.Directory) -> Swift.Bool
+  public static func exists(_ url: Foundation.URL) -> Swift.Bool
+  public static func doNotBackup(_ path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func doNotBackup(_ url: Foundation.URL) throws
+  public static func backup(_ path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func backup(_ url: Foundation.URL) throws
+  public static func move(_ path: Swift.String, in directory: ADLovin.Disk.Directory, to newDirectory: ADLovin.Disk.Directory) throws
+  public static func move(_ originalURL: Foundation.URL, to newURL: Foundation.URL) throws
+  public static func rename(_ path: Swift.String, in directory: ADLovin.Disk.Directory, to newPath: Swift.String) throws
+  public static func isFolder(_ url: Foundation.URL) -> Swift.Bool
+}
+extension ADLovin.Disk {
+  public static func save(_ value: UIKit.UIImage, to directory: ADLovin.Disk.Directory, as path: Swift.String) throws
+  public static func retrieve(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: UIKit.UIImage.Type) throws -> UIKit.UIImage
+}
+public enum FlagsmithError : Foundation.LocalizedError, Swift.Sendable {
+  case apiKey
+  case apiURL(Swift.String)
+  case encoding(Swift.EncodingError)
+  case statusCode(Swift.Int)
+  case decoding(Swift.DecodingError)
+  case unhandled(any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@available(iOS 11.0, *)
+extension ADLovin.Disk {
+  public static var totalCapacity: Swift.Int? {
+    get
+  }
+  public static var availableCapacity: Swift.Int? {
+    get
+  }
+  public static var availableCapacityForImportantUsage: Swift.Int? {
+    get
+  }
+  public static var availableCapacityForOpportunisticUsage: Swift.Int? {
+    get
+  }
+}
+extension ADLovin.Disk {
+  public static func save(_ value: [Foundation.Data], to directory: ADLovin.Disk.Directory, as path: Swift.String) throws
+  public static func append(_ value: Foundation.Data, to path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func append(_ value: [Foundation.Data], to path: Swift.String, in directory: ADLovin.Disk.Directory) throws
+  public static func retrieve(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: [Foundation.Data].Type) throws -> [Foundation.Data]
+}
+extension ADLovin.Disk.ErrorCode : Swift.Equatable {}
+extension ADLovin.Disk.ErrorCode : Swift.Hashable {}
+extension ADLovin.Disk.ErrorCode : Swift.RawRepresentable {}
+@available(*, deprecated, renamed: "TypedValue")
+extension ADLovin.UnknownTypeValue.UnknownTypeError : Swift.Equatable {}
+@available(*, deprecated, renamed: "TypedValue")
+extension ADLovin.UnknownTypeValue.UnknownTypeError : Swift.Hashable {}
+@available(*, deprecated)
+extension ADLovin.PostTrait.IdentityStruct.CodingKeys : Swift.Equatable {}
+@available(*, deprecated)
+extension ADLovin.PostTrait.IdentityStruct.CodingKeys : Swift.Hashable {}
+@available(*, deprecated)
+extension ADLovin.PostTrait.IdentityStruct.CodingKeys : Swift.RawRepresentable {}

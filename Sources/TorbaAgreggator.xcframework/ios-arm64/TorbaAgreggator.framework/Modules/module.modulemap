@@ -1,4 +1,0 @@
-framework module TorbaAgreggator {
-  header "TorbaAgreggator-Swift.h"
-  requires objc
-}

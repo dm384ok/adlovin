@@ -1,0 +1,4 @@
+framework module ADLovin {
+  header "ADLovin-Swift.h"
+  requires objc
+}

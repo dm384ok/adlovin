@@ -4,48 +4,40 @@
 import PackageDescription
 
 let package = Package(
-    name: "TorbaSDK",
+    name: "ADLovinSDK",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "TorbaSDK",
-            targets: ["TorbaSDK"]),
+            name: "ADLovinSDK",
+            targets: ["ADLovinSDK"]),
     ],
 
     dependencies: [
-        .package(
-            url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git", from: "6.9.0"),
-        .package(
-            url: "https://github.com/facebook/facebook-ios-sdk.git", branch: "main"),
-        .package(
-            url: "https://github.com/OneSignal/OneSignal-iOS-SDK",  branch: "main"),
+        
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "TorbaSDK",
+            name: "ADLovinSDK",
             dependencies: [
                 
-                .target(name: "TorbaAgregate"),
+                .target(name: "ADLovin"),
+                .target(name: "UnityAds"),
                 
-                .product(name: "OneSignalFramework", package: "OneSignal-iOS-SDK"),
-                .product(name: "OneSignalInAppMessages", package: "OneSignal-iOS-SDK"),
-                .product(name: "OneSignalLocation", package: "OneSignal-iOS-SDK"),
-                .product(name: "OneSignalExtension", package: "OneSignal-iOS-SDK"),
-
-                .product(name: "AppsFlyerLib", package: "AppsFlyerFramework"),
-                .product(name: "FacebookCore", package: "facebook-ios-sdk"),
-                .product(name: "FacebookAEM", package: "facebook-ios-sdk"),
             ]
         ),
         
         .binaryTarget(
-            name: "TorbaAgregate",
-            path: "./Sources/TorbaAgregate.xcframework"),
+            name: "ADLovin",
+            path: "./ADLovin.xcframework"),
+        
+        .binaryTarget(
+            name: "UnityAds",
+            path: "./UnityAds.xcframework"),
 
     ],
     swiftLanguageVersions: [.v5]
