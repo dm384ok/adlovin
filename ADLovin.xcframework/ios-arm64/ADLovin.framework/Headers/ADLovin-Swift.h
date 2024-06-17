@@ -301,8 +301,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS_NAMED("ADLovin")
-@interface ADLovin : NSObject
+SWIFT_CLASS_NAMED("ADLovinKey")
+@interface ADLovinKey : NSObject
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customKeys;
 + (void)enable;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

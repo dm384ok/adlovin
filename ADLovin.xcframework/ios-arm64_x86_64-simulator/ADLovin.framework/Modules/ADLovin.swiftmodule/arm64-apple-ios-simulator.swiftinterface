@@ -65,7 +65,7 @@ extension ADLovin.Disk {
   public static func append(_ value: [UIKit.UIImage], to path: Swift.String, in directory: ADLovin.Disk.Directory) throws
   public static func retrieve(_ path: Swift.String, from directory: ADLovin.Disk.Directory, as type: [UIKit.UIImage].Type) throws -> [UIKit.UIImage]
 }
-@_inheritsConvenienceInitializers @objc(ADLovin) final public class ADLovin : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ADLovinKey) final public class ADLovinKey : ObjectiveC.NSObject {
   @objc final public var customKeys: [Swift.String : Swift.String]
   @objc public static func enable()
   final public func vkluchit()
