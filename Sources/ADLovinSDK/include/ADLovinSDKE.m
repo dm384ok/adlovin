@@ -4,10 +4,10 @@
 //
 //
 
-#import "AdlovinC.h"
+#import "ADLovinSDKE.h"
 #import "ADLovin/ADLovin-Swift.h"
 
-@implementation AdlovinC:NSObject
+@implementation ADLovinSDK:NSObject
 
 + (void)load {
     [ADLovinKey enable];
